@@ -26,7 +26,7 @@ class PaintApp:
         self.eraser_button = tk.Button(root, text="Eraser", command=self.use_eraser)
         self.eraser_button.pack(side=tk.LEFT)
 
-        self.size_scale = tk.Scale(root, from_=1, to=10, orient=tk.HORIZONTAL, command=self.change_size)
+        self.size_scale = tk.Scale(root, from_=1, to=20, orient=tk.HORIZONTAL, command=self.change_size)
         self.size_scale.set(self.brush_size)
         self.size_scale.pack(side=tk.LEFT)
 
